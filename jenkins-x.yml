@@ -1,1 +1,8 @@
 buildPack: maven
+pipelineConfig:
+  pipelines:
+    release:
+      preBuild:
+        steps:
+        - sh: echo TOTALLY AWESOME
+        - sh: jx --version
